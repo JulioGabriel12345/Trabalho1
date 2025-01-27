@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #0e83f0;
+  color: #333;
+}
+
+.header {
+  background-color: #baff61;
+  color: #f80dd1;
+  text-align: center;
+  padding: 20px 15px;
+  font-size: 1.5rem;
+  border-bottom: 5px solid #cfe64f;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+
+.col-3 {
+  flex: 1 1 25%;
+  max-width: 25%;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.col-9 {
+  flex: 1 1 75%;
+  max-width: 75%;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding: 10px;
+  background-color: #ffefec;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: bold;
+  color: #ff6f61;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+ul li:hover {
+  background-color: #ff6f61;
+  color: #fff;
+}
+
+h2, h3 {
+  color: #ff6f61;
+  margin-top: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+p a {
+  color: #ff6f61;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Acessibilidade e melhor organização do menu lateral */
+ul li {
+  font-size: 1.1rem; /* Fonte maior */
+}
+
+@media (max-width: 768px) {
+  .col-3 {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 20px; /* Dá mais espaço entre o menu e o conteúdo */
+  }
+
+  .col-9 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  ul li {
+    font-size: 1rem; /* Ajusta o tamanho da fonte para melhor encaixe */
+    padding: 8px;
+  }
+}
